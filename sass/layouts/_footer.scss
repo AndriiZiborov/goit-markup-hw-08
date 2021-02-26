@@ -1,0 +1,119 @@
+
+// footer {
+  
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+  
+//     background-color: var(--dark-bg-color);
+//     color: var(--white-color);
+
+//     & a {
+//       text-decoration: none;
+//     }
+//   }
+  
+  
+  
+//   .adress-block {
+//     /* outline: 1px solid tomato; */
+//     margin-right: 70px;
+//   }
+  
+//   address {
+//     margin-top: 20px;
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.71;
+//   }
+  
+//   .adress-item:not(:first-child) {
+//     display: block;
+//     margin-top: 9px;
+//   }
+  
+//   .adress-contacts {
+//     margin-top: 9px;
+//   }
+  
+//   .adress-conrainer {
+//     margin-top: 9px;
+//   }
+  
+
+//   .adress-link {
+//     color: var(--transparent-color);
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//       color: var(--accent-color);  
+//     }
+//   }
+  
+//   .join-block {  
+
+//      .item-link {
+//       color: #ffffff;
+//       background-color: rgba(255, 255, 255, 0.1);
+
+//         &:hover,
+//         &:focus {
+//           background-color: var(--accent-color);
+//         }
+//     }
+//   } 
+  
+//   .join-block-element {
+//     margin: 0;
+  
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14; 
+//     text-transform: uppercase;
+//   }
+  
+//   .joinblock-social-list {
+//     display: flex;
+//     margin-top: 20px;
+
+//   }
+   
+//   .join-block-form-input {
+//     width: 358px;
+//     height: 50px;
+//     padding: 15px 16px;
+//     margin-right: 12px;
+  
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     background-color: inherit;  
+//     color: rgba(255, 255, 255, 0.6);
+
+//     &::placeholder {
+//       font-size: 16px;
+//       line-height: 1.25;
+//       color:  rgba(255, 255, 255, 0.6);
+//       }
+
+//       &:focus {
+//         outline: none;
+//         border-color: var(--accent-color);
+//       }
+//   }
+  
+//   .join-block-form {
+//     display: flex;
+//     align-items: center;
+//     margin-top: 20px;
+//   }
+  
+//    .join-block-button-thumb {
+//      position: relative;
+//    }
+  
+//    .join-block:not(:last-child) {
+//      margin-right: 93px;
+//    }
+
+  
