@@ -69,12 +69,13 @@ img {
   justify-content: space-between;
 }
 
+.hero .container {
+  flex-direction: column;
+}
+
 @media (max-width: 479px) {
   .container {
     width: 100%;
-  }
-  .hero .container {
-    flex-direction: column;
   }
 }
 
@@ -268,6 +269,7 @@ img {
   .mobile-menu-social-list {
     display: flex;
     margin-top: 64px;
+    flex-wrap: wrap;
   }
   .mobile-menu-social-list .link {
     font-weight: 500;
@@ -295,6 +297,9 @@ img {
   .burger-btn, .mobile-menu {
     display: none;
   }
+  .header {
+    padding: 0;
+  }
   .header .logo {
     padding-top: 26px;
     padding-bottom: 26px;
@@ -309,6 +314,7 @@ img {
     align-items: center;
   }
   .navigation-list .link {
+    padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
@@ -325,8 +331,7 @@ img {
   .navigation-list .strip::after {
     position: absolute;
     content: "";
-    margin-top: 28px;
-    top: 98.5%;
+    top: 95%;
     left: 0;
     width: 100%;
     height: 4px;
@@ -417,10 +422,44 @@ img {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/herobackground.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile-Header-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile-Header-img@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .background {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet-Header-img.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet-header-img@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .background {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop-header-img.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop-header-img@2x.jpg);
+  }
 }
 
 .activity-container {
@@ -484,9 +523,12 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  width: 100%;
+  max-width: 450px;
+  height: 95%;
+  max-height: 609px;
   padding: 40px;
+  overflow: scroll;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -513,12 +555,6 @@ img {
 }
 
 /* ================== ФОРМА МОДАЛКИ=============== */
-@media screen and (max-width: 479px) {
-  .modal {
-    width: 100%;
-  }
-}
-
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -590,6 +626,7 @@ img {
 
 .modal-form-checkbox a {
   color: #2196F3;
+  margin-left: 3px;
 }
 
 .modal-form-checkbox::before {
@@ -597,7 +634,7 @@ img {
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 8px;
+  margin-right: 5px;
   border: 2px solid;
   border-radius: 3px;
   border-color: #212121;
