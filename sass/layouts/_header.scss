@@ -17,7 +17,7 @@
   }
 }
 
-
+// FOR MOBILE
 @media screen and (max-width: 767px) {
 
 .burger-btn,
@@ -127,8 +127,6 @@
     }
   }
 
-
-
   .navigation-list {
     display: none;
   }
@@ -137,13 +135,162 @@
     display: none;
   }
 }
+// FOR MOBILE
 
+
+
+// FOR TABLET
 @media screen and (min-width: 768px) {
 .burger-btn, .mobile-menu {
    display: none;
   }
+
+  .header {
+    .logo {
+      padding-top: 26px;
+      padding-bottom: 26px;
+
+      margin-right: 88px;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-list {
+    display: flex;
+    align-items: center;
+
+    .link {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.142;
+      letter-spacing: 0.02em;
+      color: var(--primary-text-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:focus {
+        color: var(--accent-color);
+      }
+    }
+
+    .strip {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+
+        margin-top: 28px;
+        top: 98.5%;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+       }
+    }
+  }
+
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .contacts-list {
+    // margin-left: 60px;
+
+    .link { 
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.166;
+      letter-spacing: 0.02em;
+      
+      color: var(--second-text-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+      &:focus {
+        color: var(--accent-color);
+      }
+
+      &:focus .contacts-icon {
+        fill: var(--accent-color);
+      }
+    }
+  }
+ }
+
+ .contacts-list-item {
+   display: flex;
+   align-items: center;
+  
+  &:not(:first-child) {
+  margin-top: 10px;
+ }
+ 
+ .contacts-icon {
+   display: inline-block;
+   margin-right: 8px;
+   fill: currentColor;
+ }
+
 }
 
+// FOR TABLET
+
+
+// FOR DESKTOP
+
+@media screen and (min-width: 1200px) {
+  .header {
+    .logo {
+      font-size: 26px;
+      line-height: 1.192;
+    }
+
+    .navigation-list {
+      .link {
+        &:hover {
+        color: var(--accent-color);
+      }
+     }
+    }
+
+    .contacts-list-item {
+      margin-top: 0;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      .contacts-icon {
+        margin-right: 10px;
+      }
+    }
+
+    .contacts-list {
+      display: flex;
+      align-items: center;
+
+      .link {
+        font-size: 14px;
+        line-height: 1.142;
+
+        &:hover {
+          color: var(--accent-color);
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+ }
 
 
 
