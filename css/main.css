@@ -68,6 +68,12 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -202,7 +208,6 @@ img {
 .mobile-menu-social-list {
   display: flex;
   margin-top: 64px;
-  max-width: 375px;
 }
 
 .mobile-menu-social-list .link {
