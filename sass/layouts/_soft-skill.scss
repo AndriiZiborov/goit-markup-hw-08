@@ -38,7 +38,7 @@
     .softskills-item {
         &::before {
           content: "";
-          width: 100%;
+          max-width: 450px;
           height: 120px;
       }
   }
