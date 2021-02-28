@@ -73,6 +73,14 @@ img {
   flex-direction: column;
 }
 
+.activity-container .container {
+  flex-direction: column;
+}
+
+.team .container {
+  flex-direction: column;
+}
+
 @media screen and (min-width: 320px) {
   .container {
     width: 100%;
@@ -81,7 +89,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
     margin: 0 auto;
   }
 }
@@ -292,7 +300,7 @@ img {
   }
 }
 
-@media (min-width: 320px) and (max-width: 380px) {
+@media (min-width: 320px) and (max-width: 479px) {
   .mobile-menu-nav-link {
     font-size: 30px;
   }
@@ -479,6 +487,16 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .activity-container {
+    display: none;
+  }
+}
+
+.activity-container-list {
+  display: flex;
+}
+
 .activity-container {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -518,6 +536,21 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--primary-bg-color);
+}
+
+.team-item {
+  max-width: 450px;
+}
+
+.team-item .team-img {
+  width: 100%;
+  max-width: 450px;
 }
 
 .backdrop {
@@ -705,9 +738,12 @@ img {
   margin-top: 10px;
   margin-bottom: 0;
   color: var(--second-text-color);
-  text-align: justify;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.softskills-item {
+  max-width: 450px;
 }
 
 .softskills-item::before {
@@ -720,9 +756,58 @@ img {
   border-radius: 4px;
 }
 
+.antenna::before {
+  background-image: url(../img/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.clock::before {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/clock.svg);
+}
+
+.diagram::before {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/diagram.svg);
+}
+
+.astronaut::before {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/astronaut.svg);
+}
+
+@media screen and (min-width: 768px) {
+  .softskills-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .softskills-item {
+    width: 354px;
+  }
+  .softskills-item:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .softskills-item::before {
+    width: 354px;
+  }
+  .softskills-text, .softskills-title {
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .softskills {
-    padding-top: 94px;
+  .softskills-item {
+    width: calc((100% - 90px) / 4);
+  }
+  .softskills-item:not(:first-child) {
+    margin-left: 30px;
+  }
+  .softskills-item::before {
+    width: 270px;
   }
 }
 /*# sourceMappingURL=main.css.map */

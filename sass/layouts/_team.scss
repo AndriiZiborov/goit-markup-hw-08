@@ -1,10 +1,26 @@
+
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--primary-bg-color);
+}
+
+.team-item {
+    max-width: 450px;
+
+    .team-img {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
 // .team {
 //     padding-top: 94px;
 //     padding-bottom: 94px;
 //     background-color: var(--primary-bg-color);
 //   }
   
-//   .team-img {
+//   .team-img-list {
 //     margin-top: 50px;
 //     display: flex;
 //   }
