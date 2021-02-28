@@ -544,13 +544,35 @@ img {
   background-color: var(--primary-bg-color);
 }
 
-.team-item {
-  max-width: 450px;
+@media screen and (max-width: 479px) {
+  .team-item {
+    max-width: 450px;
+  }
+  .team-item .team-img {
+    width: 100%;
+  }
 }
 
-.team-item .team-img {
-  width: 100%;
-  max-width: 450px;
+@media screen and (min-width: 480px) {
+  .team-item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-img-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team-item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: 270px;
+  }
 }
 
 .backdrop {
