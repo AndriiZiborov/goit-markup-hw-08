@@ -11,9 +11,8 @@
    flex-direction: column;
    
 }
-  @media (max-width: 479px) {
+  @media (min-width: 320px) {
      width: 100%;
-
 
   }
 

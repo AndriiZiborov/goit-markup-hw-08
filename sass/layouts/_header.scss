@@ -111,7 +111,6 @@
 .mobile-menu-social-list {
   display: flex;
   margin-top: 64px;
-  flex-wrap: wrap;
   
     .link {
       font-weight: 500;
@@ -138,6 +137,32 @@
   .contacts-list {
     display: none;
   }
+}
+
+@media (min-width: 320px) and (max-width: 380px) {
+  .mobile-menu-nav-link {
+    font-size: 30px;
+  }
+
+  .mobile-menu-contacts-link{
+    font-size: 20px;
+  }
+  
+  .mobile-menu-social-list-item:not(:last-child) {
+    margin-right: 5px;
+  
+    .link {
+      padding-right: 5px;
+      
+    }
+  }
+
+  .mobile-menu-social-list {
+      .link {
+        font-size: 14px;
+       }
+    }
+
 }
 // FOR MOBILE
 
