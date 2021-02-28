@@ -713,6 +713,7 @@ img {
 .softskills-item::before {
   content: "";
   display: inline-block;
+  width: 100%;
   max-width: 450px;
   height: 120px;
   background: #f5f4fa;
