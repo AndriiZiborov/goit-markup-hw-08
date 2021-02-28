@@ -73,7 +73,7 @@ img {
   flex-direction: column;
 }
 
-@media (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .container {
     width: 100%;
   }
@@ -717,6 +717,14 @@ img {
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 320px) {
+  .softskills-item::before {
+    content: "";
+    max-width: 450px;
+    height: 120px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
