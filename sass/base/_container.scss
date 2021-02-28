@@ -9,9 +9,10 @@
 
   .hero &  {
    flex-direction: column;
+  
    
 }
-  @media (min-width: 320px) {
+  @media (min-width: 320px) and (max-width: 479px) {
      width: 100%;
 
   }
