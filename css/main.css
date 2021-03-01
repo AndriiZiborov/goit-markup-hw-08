@@ -656,7 +656,7 @@ img {
 }
 
 .clients-list {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
@@ -694,9 +694,6 @@ img {
   .clients-item {
     flex-basis: calc((100% - 15px * 6) / 3);
   }
-  .clients-item .clients-item-link {
-    width: 226px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -706,9 +703,6 @@ img {
   }
   .clients-item {
     flex-basis: calc((100% - 15px * 12) / 6);
-  }
-  .clients-item .clients-item-link {
-    width: 170px;
   }
 }
 

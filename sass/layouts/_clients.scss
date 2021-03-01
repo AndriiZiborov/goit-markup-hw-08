@@ -9,7 +9,7 @@
 
 .clients-list {
 
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
@@ -52,10 +52,11 @@
  @media screen and (min-width: 768px) {
 
      .clients-item  {
-        .clients-item-link {
-          width: 226px;
-       }
         flex-basis: calc((100% - 15px * 6) / 3);
+        .clients-item-link {
+          // width: 226px;
+       }
+        
    }
  }
 
@@ -66,10 +67,11 @@
     }
 
     .clients-item  {
-      .clients-item-link {
-        width: 170px;
-      }
       flex-basis: calc((100% - 15px * 12) / 6);
+      .clients-item-link {
+        // width: 170px;
+      }
+      
    }
  }
 
