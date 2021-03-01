@@ -41,8 +41,10 @@
 }
 
 
-
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   top: 0;
   left: 50%;
@@ -85,9 +87,7 @@
   right: 15px;
 }
 
-.mobile-menu-contacts {
-  margin-top: 302px;
-}
+
 
 .mobile-menu-contacts-item:not(:first-child) {
   margin-top: 32px;
