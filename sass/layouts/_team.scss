@@ -47,6 +47,10 @@
      .team-img {
        width: 100%;
      }
+
+     &:not(:first-child) {
+      margin-top: 30px;
+     }
   }
 }
 
