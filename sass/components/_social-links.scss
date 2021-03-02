@@ -3,6 +3,10 @@
     justify-content: center;
     margin-top: 16px;
 
+    .footer & {
+      margin-top: 20px;
+    }
+
     .item-link {
   
         width: 44px;
@@ -22,6 +26,10 @@
           color: #ffffff;
           background-color: var(--accent-color);
           cursor: pointer;
+        }
+        .footer & {
+          background-color: rgba(255, 255, 255, 0.1);
+          color: #fff;
         }
       }
   }
