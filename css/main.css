@@ -64,8 +64,12 @@ img {
   width: 100%;
   padding: 0 15px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+
+.header .container,
+.hero .container {
+  align-items: center;
 }
 
 .hero .container,
@@ -79,7 +83,7 @@ img {
 
 @media screen and (min-width: 320px) {
   .container {
-    width: 100%;
+    width: 100vw;
   }
 }
 
@@ -765,7 +769,7 @@ img {
 
 .team-item {
   margin: 15px;
-  width: calc(100% - 30px);
+  width: calc(100vw - 30px);
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -824,20 +828,144 @@ img {
 }
 
 .offers-list {
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
-.offers-list-item {
-  width: calc(100% - 30px);
-  height: 404px;
+.offers-thumb {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
 }
 
-.offers-list-item .offers-list-link {
-  max-width: 100%;
+.offers-overlay {
+  position: absolute;
+  top: 100%;
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 61px 19px;
+  font-size: 14px;
+  line-height: 1.56;
+  color: #FFFFFF;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.offers-list-item:not(:first-child) {
-  margin-top: 30px;
+.offers-list-link:hover .offers-overlay,
+.offers-list-link:focus .offers-overlay {
+  transform: translateY(-100%);
+}
+
+@media screen and (min-width: 320px) {
+  .offers-list-item {
+    width: calc(100vw - 30px);
+    height: 324px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  .offers-list-item img {
+    width: 100%;
+    height: 234px;
+  }
+  .offers-list-item:not(:first-child) {
+    margin-top: 30px;
+  }
+  .offers-overlay {
+    position: absolute;
+    top: 100%;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 61px 19px;
+    font-size: 14px;
+    line-height: 1.56;
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .offers-list-link:hover .offers-overlay,
+  .offers-list-link:focus .offers-overlay {
+    transform: translateY(-100%);
+  }
+  .offers-list-text {
+    padding: 16px 19px;
+  }
+  .offers-list-text h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+  }
+  .offers-list-text p {
+    margin: 0;
+    margin-top: 4px;
+    font-size: 13px;
+    line-height: 1.87;
+    color: var(--second-text-color);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .offers-list-item {
+    width: calc(100vw - 30px);
+    height: 404px;
+  }
+  .offers-list-item img {
+    height: 294px;
+  }
+  .offers-list-text {
+    padding: 20px 24px;
+  }
+  .offers-list-text h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+  }
+  .offers-list-text p {
+    margin: 0;
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--second-text-color);
+  }
+  .offers-overlay {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .offers-btn-list {
+    justify-content: center;
+  }
+  .offers-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    padding-top: 30px;
+  }
+  .offers-list .offers-list-item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .offers-list {
+    padding-top: 50px;
+  }
+  .offers-list .offers-list-item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .clients {
@@ -852,12 +980,11 @@ img {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   margin: -15px;
 }
 
 .clients-item {
-  width: calc((100% - 15px * 4) / 2);
+  width: calc((100vw - 15px * 4) / 2);
   height: 90px;
   margin: 15px;
 }
