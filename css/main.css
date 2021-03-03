@@ -72,13 +72,14 @@ img {
 .activity-container .container,
 .team .container,
 .clients .container,
-.footer .container {
+.footer .container,
+.offers .container {
   flex-direction: column;
 }
 
 @media screen and (min-width: 320px) {
   .container {
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -801,6 +802,42 @@ img {
   .team-item {
     width: 270px;
   }
+}
+
+.offers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.offers-btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -7.5px 0;
+}
+
+.offers-btn-item {
+  margin: 7.5px 0;
+}
+
+.offers-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.offers-list {
+  padding-top: 40px;
+}
+
+.offers-list-item {
+  width: calc(100% - 30px);
+  height: 404px;
+}
+
+.offers-list-item .offers-list-link {
+  max-width: 100%;
+}
+
+.offers-list-item:not(:first-child) {
+  margin-top: 30px;
 }
 
 .clients {
