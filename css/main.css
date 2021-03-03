@@ -315,6 +315,7 @@ img {
     fill: var(--accent-color);
   }
   .mobile-menu {
+    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -952,6 +953,7 @@ img {
   .offers-list .offers-list-item {
     width: calc((100% - 60px) / 2);
     margin: 15px;
+    height: 440px;
   }
 }
 
@@ -1216,6 +1218,7 @@ img {
 
 .softskills {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .softskills-title {
@@ -1294,6 +1297,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .softskills {
+    padding-bottom: 0;
+  }
   .softskills-item {
     width: calc((100% - 90px) / 4);
   }

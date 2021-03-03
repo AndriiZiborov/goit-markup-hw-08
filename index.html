@@ -236,17 +236,29 @@
 
       <ul class="activity-container-list list">
           <li class="activity-container-item">
-             <img class="img" src="./img/img.jpg" alt="програмирование" width="370">
+            <picture>
+              <source srcset="./img/about/about1.webp 1x, ./img/about/about1@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">  
+              <source srcset="./img/about/about1.jpg 1x, ./img/about/about1@2x.jpg 2x" media="(min-width: 1200px)"> 
+              <img src="./img/about/about1.jpg" alt="Десктопные приложения">
+            </picture>             
              <p class="activity-container-text">Десктопные приложения</p>
           </li>
 
          <li class="activity-container-item">
-             <img src="./img/img2.jpg" alt="разработка мобильных приложений" width="370">
+          <picture>
+            <source srcset="./img/about/about2.webp 1x, ./img/about/about2@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">  
+            <source srcset="./img/about/about2.jpg 1x, ./img/about/about2@2x.jpg 2x" media="(min-width: 1200px)"> 
+            <img src="./img/about/about2.jpg" alt="Мобильные приложения">
+          </picture>
              <p class="activity-container-text">Мобильные приложения</p>
          </li>
 
          <li class="activity-container-item">
-             <img src="./img/img3.jpg" alt="веб дизайн" width="370"> 
+          <picture>
+            <source srcset="./img/about/about3.webp 1x, ./img/about/about3@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">  
+            <source srcset="./img/about/about3.jpg 1x, ./img/about/about3@2x.jpg 2x" media="(min-width: 1200px)"> 
+            <img src="./img/about/about3.jpg" alt="Дизайнерские решения">
+          </picture> 
              <p class="activity-container-text">Дизайнерские решения</p>
          </li>
       </ul>
@@ -259,11 +271,17 @@
       <h2 class="title"> Наша команда </h2>
       <ul class="team-img-list list">
          <li class="team-item"> 
-           <picture>
-             <source srcset="./img/igor-desktop.jpg 1x, ./img/igor-desktop@2x.jpg 2x" media="(min-width: 1200px)">  
-             <source srcset="./img/igor-tablet.jpg 1x, ./img/igor-tablet@2x.jpg 2x" media="(min-width: 768px)">          
-           <img class="team-img" src="./img/igor.jpg" alt="Product Designer">
-          </picture>
+
+          <picture>
+              <source srcset="./img/igor-desktop.webp 1x, ./img/igor-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">  
+              <source srcset="./img/igor-desktop.jpg 1x, ./img/igor-desktop@2x.jpg 2x" media="(min-width: 1200px)">  
+              <source srcset="./img/igor-tablet.webp 1x, ./img/igor-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"> 
+              <source srcset="./img/igor-tablet.jpg 1x, ./img/igor-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./img/igor.webp 1x, ./img/igor@2x.webp 2x" media="(min-width: 480px)" type="image/webp"> 
+              <source srcset="./img/igor.jpg 1x, ./img/igor@2x.jpg 2x" media="(min-width: 480px)">           
+          <img class="team-img" src="./img/igor.jpg" alt="Product Designer">
+         </picture>
+
            <div class="team-text">
              <h3 class="team-members">Игорь Демьяненко</h3>
              <p class="specialty">Product Designer</p>
@@ -306,10 +324,14 @@
         <li class="team-item"> 
           
           <picture>
-            <source srcset="./img/olga-desktop.jpg 1x, ./img/olga-desktop@2x.jpg 2x" media="(min-width: 1200px">  
-            <source srcset="./img/olga-tablet.jpg 1x, ./img/olga-tablet@2x.jpg 2x" media="(min-width: 768px">          
-          <img class="team-img" src="./img/olga.jpg" alt="Product Designer">
-         </picture>
+            <source srcset="./img/olga-desktop.webp 1x, ./img/olga-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">  
+            <source srcset="./img/olga-desktop.jpg 1x, ./img/olga-desktop@2x.jpg 2x" media="(min-width: 1200px)">  
+            <source srcset="./img/olga-tablet.webp 1x, ./img/olga-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"> 
+            <source srcset="./img/olga-tablet.jpg 1x, ./img/olga-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./img/olga.webp 1x, ./img/olga@2x.webp 2x" media="(min-width: 480px)" type="image/webp"> 
+            <source srcset="./img/olga.jpg 1x, ./img/olga@2x.jpg 2x" media="(min-width: 480px)">           
+        <img class="team-img" src="./img/olga.jpg" alt="Product Designer">
+       </picture>
 
            <div class="team-text">
              <h3 class="team-members">Ольга Репина </h3>
@@ -351,11 +373,16 @@
            </div>
 
         </li>
+
         <li class="team-item"> 
 
           <picture>
-            <source srcset="./img/nikolay-desktop.jpg 1x, ./img/nikolay-desktop@2x.jpg 2x" media="(min-width: 1200px">  
-            <source srcset="./img/nikolay-tablet.jpg 1x, ./img/nkolay-tablet@2x.jpg 2x" media="(min-width: 768px">          
+            <source srcset="./img/nikolay-desktop.webp 1x, ./img/nikolay-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">  
+            <source srcset="./img/nikolay-desktop.jpg 1x, ./img/nikolay-desktop@2x.jpg 2x" media="(min-width: 1200px)">  
+            <source srcset="./img/nikolay-tablet.webp 1x, ./img/nkolay-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"> 
+            <source srcset="./img/nikolay-tablet.jpg 1x, ./img/nkolay-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./img/nikolay.webp 1x, ./img/nkolay@2x.webp 2x" media="(min-width: 480px)" type="image/webp"> 
+            <source srcset="./img/nikolay.jpg 1x, ./img/nkolay@2x.jpg 2x" media="(min-width: 480px)">  
           <img class="team-img" src="./img/nikolay.jpg" alt="Product Designer">
          </picture>
 
@@ -399,8 +426,12 @@
         <li class="team-item"> 
 
           <picture>
-            <source srcset="./img/mihail-desktop.jpg 1x, ./img/mihail-desktop@2x.jpg 2x" media="(min-width: 1200px">  
-            <source srcset="./img/mihail-tablet.jpg 1x, ./img/mihail-tablet@2x.jpg 2x" media="(min-width: 768px">          
+              <source srcset="./img/mihail-desktop.webp 1x, ./img/mihail-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">  
+              <source srcset="./img/mihail-desktop.jpg 1x, ./img/mihail-desktop@2x.jpg 2x" media="(min-width: 1200px)">  
+              <source srcset="./img/mihail-tablet.webp 1x, ./img/mihail-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"> 
+              <source srcset="./img/mihail-tablet.jpg 1x, ./img/mihail-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./img/mihail.webp 1x, ./img/mihail@2x.webp 2x" media="(min-width: 480px)" type="image/webp"> 
+              <source srcset="./img/mihail.jpg 1x, ./img/mihail@2x.jpg 2x" media="(min-width: 480px)">           
           <img class="team-img" src="./img/mihail.jpg" alt="Product Designer">
          </picture>
 
@@ -517,7 +548,7 @@
         </li>
         
         <li class="footer-contacts-list-item">
-          <a class="link" href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
+          <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
         </li>
 
       </ul>
@@ -586,8 +617,6 @@
 
     </div>
 
-
-   
   </div>
 
 </footer>
