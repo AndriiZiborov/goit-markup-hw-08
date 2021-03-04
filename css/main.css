@@ -1196,7 +1196,7 @@ img {
 @media screen and (max-width: 479px) {
   .modal-form-checkbox .modal-form-checkbox-text,
   .modal-form-checkbox a {
-    font-size: 8px;
+    font-size: 6px;
   }
 }
 
