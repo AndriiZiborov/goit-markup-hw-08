@@ -129,6 +129,13 @@
   }
   
   .modal-form-checkbox {
+
+    @media screen and (max-width: 479px) {
+      .modal-form-checkbox-text,
+       & a {
+        font-size: 9px;
+      }
+    }
     
     display: flex;
     align-items: center;
