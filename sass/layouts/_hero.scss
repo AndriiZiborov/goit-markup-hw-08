@@ -18,7 +18,6 @@
 
 
 .background {   
-    max-width: 480px;
     height: 400px;
     margin-left: auto;  
     margin-right: auto;
@@ -33,7 +32,8 @@
     screen and (min-resolution: 192dpi) and (min-width: 320px),
     screen and (min-resolution: 2dppx) and (min-width: 320px) {
         .background {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile-Header-img@2x.jpg);
+            max-width: 1600px;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile-header-img@2x.jpg);
         }
     }
 
@@ -41,9 +41,8 @@
 
     @media screen and (min-width: 768px) {
         .background {
-            max-width: 768px;
             height: 400px;
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet-Header-img.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet-header-img.jpg);
          }
     }
 
@@ -62,7 +61,7 @@
             padding-bottom: 200px;
         }
         .background {
-          max-width: 1600px;
+          
           height: 600px;
           background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop-header-img.jpg);
     }
